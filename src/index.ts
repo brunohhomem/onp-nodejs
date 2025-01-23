@@ -1,9 +1,11 @@
-import express, { Request, Response } from 'express'
+import express from 'express'
+import routes from './routes'
 
 const server = express()
 
-server.get('/', (req: Request, res: Response) => {
-  res.json({ message: 'Funcionou!' })
-})
+server.use(express.json())
+server.use(routes)
 
-server.listen(3000)
+server.listen(3000, () => {
+  console.log('Servidor rodando na porta 3000')
+})

@@ -1,0 +1,36 @@
+POST http://localhost:3000/painel/pijama
+Content-Type: application/json
+
+{
+  "nome": "Pijama de algodão",
+  "tamanho": "M",
+  "cor": "Azul",
+  "preco": 99.90,
+  "quantidade_estoque": 20
+}
+
+# ###
+
+# POST http://localhost:3333/events/24b1e32a-2dd2-4eb0-b873-f65cdde3763f/attendees
+# Content-Type: application/json
+
+# {
+#   "name": "Bruno Homem",
+#   "email": "bruno@email.com"
+# }
+
+###
+
+GET http://localhost:3000/
+
+# ###
+
+# GET http://localhost:3333/events/24b1e32a-2dd2-4eb0-b873-f65cdde3763f/attendees?query=bruno
+
+# ###
+
+# GET http://localhost:3333/attendees/7/badge
+
+
+# ###
+# GET http://localhost:3333/attendees/7/check-in
